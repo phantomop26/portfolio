@@ -10,7 +10,6 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // ✅ Add these for correct static asset paths
   basePath: isProd ? '/portfolio' : '',
   assetPrefix: isProd ? '/portfolio/' : '',
 };
