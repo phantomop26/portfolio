@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production';
+const repoName = '/Portfolio'; // Make sure this matches your GitHub repository name exactly
 
 const nextConfig = {
   output: 'export',
@@ -10,8 +11,8 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  basePath: isProd ? '/portfolio' : '',
-  assetPrefix: isProd ? '/portfolio/' : '',
+  basePath: isProd ? repoName : '',
+  assetPrefix: isProd ? repoName : '', // Removed trailing slash for consistency
 };
 
 export default nextConfig;
