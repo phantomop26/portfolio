@@ -1,13 +1,18 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
-  output: 'export', // enables static export (next export)
-  trailingSlash: true, // required for proper routing on GitHub Pages
+  output: 'export',
+  trailingSlash: true,
   images: {
-    unoptimized: true, // disables next/image optimization for static export
+    unoptimized: true,
   },
   eslint: {
-    ignoreDuringBuilds: true, // disables ESLint errors during `next build`
+    ignoreDuringBuilds: true,
   },
+  // ✅ Add these for correct static asset paths
+  basePath: isProd ? '/portfolio' : '',
+  assetPrefix: isProd ? '/portfolio/' : '',
 };
 
 export default nextConfig;
