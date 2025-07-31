@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "dev:turbo": "next dev --turbo",
-    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build": "next build",
+    "export": "next export",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "emailjs-com": "^3.2.0",
