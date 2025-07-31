@@ -8,7 +8,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="text-xl font-bold text-slate-900 dark:text-white">
-              Funda
+              Sahil
             </Link>
             <div className="hidden md:flex space-x-8">
               <Link href="/" className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">
@@ -35,7 +35,7 @@ export default function AboutPage() {
             About Me
           </h1>
           <p className="text-xl text-slate-600 dark:text-slate-300 text-center mb-16 max-w-3xl mx-auto">
-            Passionate full-stack developer with a love for creating innovative solutions and building amazing user experiences.
+            Computer Science student at NYU passionate about software engineering, data science, and building innovative solutions.
           </p>
         </div>
       </section>
@@ -49,18 +49,19 @@ export default function AboutPage() {
                 My Journey
               </h2>
               <p className="text-lg text-slate-600 dark:text-slate-300 mb-6">
-                My journey in software development began with a curiosity about how things work on the web. 
-                What started as simple HTML pages has evolved into a passion for building complex, 
-                scalable applications that solve real-world problems.
+                My journey in technology began with a fascination for mathematics and problem-solving. 
+                Currently pursuing Computer Science at NYU with minors in Mathematics and Finance, 
+                I've developed a passion for building scalable applications and solving complex data problems.
               </p>
               <p className="text-lg text-slate-600 dark:text-slate-300 mb-6">
-                I believe in writing clean, maintainable code and creating user experiences that are 
-                both beautiful and functional. Every project is an opportunity to learn something new 
-                and push the boundaries of what's possible.
+                From developing ETL pipelines processing millions of records to building cross-platform 
+                mobile applications, I love tackling challenging problems and creating innovative solutions 
+                that make a real impact.
               </p>
               <p className="text-lg text-slate-600 dark:text-slate-300">
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source 
-                projects, or sharing knowledge with the developer community.
+                Beyond technical skills, I'm actively involved in leadership roles and have a strong 
+                background in mathematics competitions, having qualified for AMC 10 and won a Bronze 
+                Medal in International Maths Kangaroo.
               </p>
             </div>
             <div className="bg-gradient-to-br from-blue-500 to-purple-600 p-8 rounded-2xl text-white">
@@ -114,24 +115,25 @@ export default function AboutPage() {
                 <div className="bg-white dark:bg-slate-900 p-6 rounded-xl shadow-lg">
                   <div className="flex justify-between items-start mb-4">
                     <div>
-                      <h4 className="text-xl font-semibold text-slate-900 dark:text-white">Senior Full-Stack Developer</h4>
-                      <p className="text-blue-600 dark:text-blue-400">Tech Company Inc.</p>
+                      <h4 className="text-xl font-semibold text-slate-900 dark:text-white">Software Engineer Intern</h4>
+                      <p className="text-blue-600 dark:text-blue-400">Fundamenta.ai</p>
                     </div>
-                    <span className="text-slate-500 dark:text-slate-400 text-sm">2022 - Present</span>
+                    <span className="text-slate-500 dark:text-slate-400 text-sm">Sep 2024 - Present</span>
                   </div>
                   <p className="text-slate-600 dark:text-slate-300 mb-4">
-                    Leading development of enterprise web applications using React, Node.js, and cloud technologies. 
-                    Mentoring junior developers and implementing best practices.
+                    Engineered scalable ETL pipelines using Dagster and Python, coordinating asynchronous scraping, 
+                    enrichment, and validation across 10M+ business records. Built web dashboard for data visualization 
+                    and migrated infrastructure from AWS EC2 to bare-metal servers, cutting costs by 50%.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">
-                      React
+                      Python
                     </span>
                     <span className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">
-                      Node.js
+                      Dagster
                     </span>
                     <span className="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm">
-                      AWS
+                      PostgreSQL
                     </span>
                   </div>
                 </div>
@@ -139,24 +141,51 @@ export default function AboutPage() {
                 <div className="bg-white dark:bg-slate-900 p-6 rounded-xl shadow-lg">
                   <div className="flex justify-between items-start mb-4">
                     <div>
-                      <h4 className="text-xl font-semibold text-slate-900 dark:text-white">Frontend Developer</h4>
-                      <p className="text-blue-600 dark:text-blue-400">Startup XYZ</p>
+                      <h4 className="text-xl font-semibold text-slate-900 dark:text-white">Summer Analyst Intern</h4>
+                      <p className="text-blue-600 dark:text-blue-400">Vortyx</p>
                     </div>
-                    <span className="text-slate-500 dark:text-slate-400 text-sm">2020 - 2022</span>
+                    <span className="text-slate-500 dark:text-slate-400 text-sm">July 2024 - Sep 2024</span>
                   </div>
                   <p className="text-slate-600 dark:text-slate-300 mb-4">
-                    Built responsive user interfaces and implemented modern frontend architectures. 
-                    Collaborated with design and backend teams to deliver high-quality products.
+                    Extracted and structured data on 11.3M businesses across NJ, NY, and PA. Analyzed SMBs using 
+                    Excel and SQL to assess acquisition criteria, revealing over 80% were unfit. Automated pipelines 
+                    and compiled insights on 700+ U.S. search funds, improving processing efficiency by 60%.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">
-                      React
+                      SQL
                     </span>
                     <span className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">
-                      TypeScript
+                      Excel
                     </span>
                     <span className="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm">
-                      Tailwind CSS
+                      Data Analysis
+                    </span>
+                  </div>
+                </div>
+
+                <div className="bg-white dark:bg-slate-900 p-6 rounded-xl shadow-lg">
+                  <div className="flex justify-between items-start mb-4">
+                    <div>
+                      <h4 className="text-xl font-semibold text-slate-900 dark:text-white">Web Developer Intern</h4>
+                      <p className="text-blue-600 dark:text-blue-400">EZ Nyc Realty</p>
+                    </div>
+                    <span className="text-slate-500 dark:text-slate-400 text-sm">Dec 2023 - April 2024</span>
+                  </div>
+                  <p className="text-slate-600 dark:text-slate-300 mb-4">
+                    Improved website performance by optimizing front-end code and assets, increasing page load speed 
+                    by 15% and reducing bounce rate by 10%. Developed custom CRM integrated with Compass Real Estate 
+                    tools, automating outreach via email/SMS campaigns and building sentiment analysis engine.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">
+                      JavaScript
+                    </span>
+                    <span className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">
+                      React
+                    </span>
+                    <span className="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm">
+                      CRM Development
                     </span>
                   </div>
                 </div>
@@ -169,15 +198,27 @@ export default function AboutPage() {
               <div className="bg-white dark:bg-slate-900 p-6 rounded-xl shadow-lg">
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h4 className="text-xl font-semibold text-slate-900 dark:text-white">Bachelor of Computer Science</h4>
-                    <p className="text-blue-600 dark:text-blue-400">University of Technology</p>
+                    <h4 className="text-xl font-semibold text-slate-900 dark:text-white">Bachelor of Science in Computer Science</h4>
+                    <p className="text-blue-600 dark:text-blue-400">New York University</p>
                   </div>
-                  <span className="text-slate-500 dark:text-slate-400 text-sm">2016 - 2020</span>
+                  <span className="text-slate-500 dark:text-slate-400 text-sm">Sep 2022 - June 2026</span>
                 </div>
-                <p className="text-slate-600 dark:text-slate-300">
-                  Graduated with honors. Focused on software engineering, algorithms, and web development. 
-                  Completed capstone project on machine learning applications.
+                <p className="text-slate-600 dark:text-slate-300 mb-4">
+                  Minoring in Mathematics and Finance. Coursework includes: Algorithms, Operating Systems, 
+                  Computer Architecture, Object-Oriented Programming, Software Engineering, Data Structures, 
+                  Discrete Mathematics, and Data Analysis.
                 </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">
+                    Computer Science
+                  </span>
+                  <span className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">
+                    Mathematics
+                  </span>
+                  <span className="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm">
+                    Finance
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -253,7 +294,7 @@ export default function AboutPage() {
       <footer className="bg-slate-900 dark:bg-black text-white py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-slate-400">
-            © 2024 Funda. All rights reserved.
+            © 2025 Sahil Kumar Singh. All rights reserved.
           </p>
         </div>
       </footer>

@@ -6,10 +6,10 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Software Developer Portfolio",
-  description: "Professional portfolio showcasing software development skills, projects, and experience",
-  keywords: ["software developer", "web development", "portfolio", "react", "next.js", "typescript"],
-  authors: [{ name: "Software Developer" }],
+  title: "Sahil Kumar Singh - Portfolio",
+  description: "Computer Science student at NYU passionate about software engineering, data science, and building innovative solutions",
+  keywords: ["computer science", "software engineering", "data science", "portfolio", "react", "python", "swift", "nyu"],
+  authors: [{ name: "Sahil Kumar Singh" }],
   viewport: "width=device-width, initial-scale=1",
 };
 
@@ -25,4 +25,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-} 
+}
