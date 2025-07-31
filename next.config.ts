@@ -1,18 +1,17 @@
 /** @type {import('next').NextConfig} */
-const isGitHubPages = process.env.GITHUB_PAGES === 'true';
-const repoName = '/portfolio'; // Updated to match your actual GitHub repository name
-
 const nextConfig = {
-  output: 'export',
-  trailingSlash: true,
-  images: {
-    unoptimized: true,
-  },
+  // Temporarily ignore ESLint during builds for Vercel deployment
   eslint: {
     ignoreDuringBuilds: true,
   },
-  basePath: isGitHubPages ? repoName : '',
-  assetPrefix: isGitHubPages ? repoName : '',
+  
+  // Compress responses
+  compress: true,
+  
+  // Enable optimized images for Vercel
+  images: {
+    formats: ['image/webp', 'image/avif'],
+  },
 };
 
 export default nextConfig;

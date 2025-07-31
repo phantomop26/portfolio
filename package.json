@@ -5,13 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "dev:turbo": "next dev --turbo",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build": "next build",
-    "build:github": "GITHUB_PAGES=true next build",
-    "preview": "npm run build && npx serve out",
-    "preview:github": "npm run build:github && npx serve out -s",
-    "deploy": "npm run build:github && gh-pages -d out"
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "preview": "npm run build && npm run start"
   },
   "dependencies": {
     "emailjs-com": "^3.2.0",
