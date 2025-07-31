@@ -7,8 +7,11 @@
     "dev:turbo": "next dev --turbo",
     "start": "next start",
     "lint": "next lint",
-    "build": "NODE_ENV=production next build",
-    "deploy": "npm run build && gh-pages -d out"
+    "build": "next build",
+    "build:github": "GITHUB_PAGES=true next build",
+    "preview": "npm run build && npx serve out",
+    "preview:github": "npm run build:github && npx serve out -s",
+    "deploy": "npm run build:github && gh-pages -d out"
   },
   "dependencies": {
     "emailjs-com": "^3.2.0",
