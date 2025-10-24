@@ -270,75 +270,55 @@ export default function Home() {
 
   const projects = [
     {
+      title: "Poker Analyst - Win Percentage Calculator",
+      subtitle: "Statistical Analysis Tool",
+      description: "A sophisticated poker win percentage calculator with opponent behavior analysis. Calculate your chances of winning based on your hand, community cards, and opponent playing styles.",
+      liveLink: "https://poker-analyst-p13prjkux-sahils-projects-eaea9cba.vercel.app/",
+      codeLink: "https://github.com/phantomop26/Poker-Analyst",
+      color: "from-red-500 to-orange-500"
+    },
+    {
       title: "Smart Road Trip Planner",
-      subtitle: "Cross-Platform Travel App",
+      subtitle: "Cross-Platform Travel App", 
       description: "Developed a smart travel app in Swift that suggests stops based on ETA, user mood, and group input. Integrates real-time data from Google Maps API and OpenStreetMap with features like EV charging, toll estimates, weather alerts, and AI-generated trip journals.",
-      liveLink: "#",
-      codeLink: "#",
-      color: "from-blue-500 to-cyan-500"
+      liveLink: "https://github.com/phantomop26/travel-app",
+      codeLink: "https://github.com/phantomop26/travel-app",
+      color: "from-green-500 to-teal-500"
     },
     {
-      title: "SwiftUI 2048 Game",
-      subtitle: "Mobile Puzzle Game", 
-      description: "Built a fully featured 2048 puzzle game in SwiftUI with swipe gesture support, smooth merging animations, undo functionality, and persistent high score storage. Features reactive state management with Combine and full dark/light mode support.",
-      liveLink: "#",
-      codeLink: "#",
-      color: "from-blue-500 to-cyan-500"
+      title: "Deep Recurrent Factor Model (LSTM + LRP)",
+      subtitle: "Financial Machine Learning",
+      description: "An interpretable non-linear and time-varying multi-factor model based on LSTM and Layer-wise Relevance Propagation. Extends traditional linear multi-factor models by capturing non-linear relationships and time dependencies between factors and stock returns.",
+      liveLink: "https://github.com/phantomop26/Deep-Recurrent-Factor-Model-LSTM-LRP-",
+      codeLink: "https://github.com/phantomop26/Deep-Recurrent-Factor-Model-LSTM-LRP-",
+      color: "from-purple-500 to-indigo-500"
     },
     {
-      title: "ETL Data Pipeline",
-      subtitle: "Data Engineering Project",
-      description: "Engineered scalable ETL pipelines using Dagster and Python, coordinating asynchronous scraping, enrichment, and validation across 10M+ business records from platforms like Google, Yelp, and TikTok.",
-      liveLink: "#",
-      codeLink: "#",
-      color: "from-blue-500 to-cyan-500"
-    },
-    {
-      title: "Real Estate CRM",
-      subtitle: "Business Management System",
-      description: "Developed a custom CRM integrated with Compass Real Estate tools, automating outreach via email/SMS campaigns and building internal tools including sentiment analysis and tenant management systems.",
-      liveLink: "#",
-      codeLink: "#",
+      title: "TaskMan",
+      subtitle: "Project Management System",
+      description: "A simple, lightweight task & project management web application that combines a Python backend with a static frontend (HTML/CSS/JavaScript) to let users create, edit, categorize, and track tasks and simple projects.",
+      liveLink: "https://github.com/phantomop26/TaskMan",
+      codeLink: "https://github.com/phantomop26/TaskMan",
       color: "from-blue-500 to-cyan-500"
     }
   ];
 
-  const placeholderProjects = [
+  const additionalProjects = [
     {
-      title: "AI-Powered Portfolio Tracker",
-      subtitle: "Investment Analytics Platform",
-      description: "Machine learning-driven investment tracker with real-time market analysis, risk assessment, and automated portfolio rebalancing using Python and TensorFlow.",
-      color: "from-green-500 to-emerald-500"
-    },
-    {
-      title: "Blockchain Voting System",
-      subtitle: "Decentralized Democracy",
-      description: "Secure voting platform built on Ethereum blockchain with smart contracts, ensuring transparency and immutability in electoral processes.",
-      color: "from-purple-500 to-violet-500"
-    },
-    {
-      title: "Neural Network Visualizer",
-      subtitle: "Educational AI Tool",
-      description: "Interactive web application for visualizing neural network architectures and training processes, built with React and D3.js for educational purposes.",
+      title: "SwiftUI 2048 Game",
+      subtitle: "Mobile Puzzle Game",
+      description: "A fully featured 2048 puzzle game in SwiftUI with swipe gesture support, smooth merging animations, undo functionality, and persistent high score storage. Features reactive state management with Combine and full dark/light mode support.",
+      liveLink: "https://github.com/phantomop26/2048",
+      codeLink: "https://github.com/phantomop26/2048",
       color: "from-orange-500 to-red-500"
     },
     {
-      title: "Cloud Infrastructure Monitor",
-      subtitle: "DevOps Dashboard",
-      description: "Real-time monitoring dashboard for cloud infrastructure with automated scaling, cost optimization, and performance analytics using AWS and Docker.",
-      color: "from-teal-500 to-cyan-500"
-    },
-    {
-      title: "Social Impact Tracker",
-      subtitle: "Non-Profit Management",
-      description: "Comprehensive platform for tracking social impact metrics, volunteer management, and donation processing for non-profit organizations.",
-      color: "from-pink-500 to-rose-500"
-    },
-    {
-      title: "Quantum Computing Simulator",
-      subtitle: "Research Tool",
-      description: "Educational quantum computing simulator with visual qubit manipulation, quantum gate operations, and algorithm demonstrations using Python and Qiskit.",
-      color: "from-indigo-500 to-blue-500"
+      title: "Blackjack Game",
+      subtitle: "Command-Line Card Game",
+      description: "A simple, readable, and extensible Blackjack (21) implementation in Python. Command-line Blackjack game intended for learning, experimenting with game logic, and extending into GUIs or web front-ends.",
+      liveLink: "https://github.com/phantomop26/Blackjack",
+      codeLink: "https://github.com/phantomop26/Blackjack",
+      color: "from-emerald-500 to-teal-500"
     }
   ];
 
@@ -593,10 +573,10 @@ export default function Home() {
                 </div>
               ))}
               
-              {/* Placeholder projects with random content */}
-              {placeholderProjects.map((project, i) => (
+              {/* Additional completed projects */}
+              {additionalProjects.map((project, i) => (
                 <div 
-                  key={`placeholder-${i}`}
+                  key={`additional-${i}`}
                   data-project-index={projects.length + i}
                   className={`group relative bg-gray-900/70 backdrop-blur-md rounded-2xl p-8 border border-blue-500/30 hover:scale-[1.02] transition-all duration-700 hover:shadow-2xl hover:border-blue-400/50 hover:shadow-blue-500/20 ${
                     visibleProjects[projects.length + i] 
@@ -621,12 +601,22 @@ export default function Home() {
                           {project.description}
                         </p>
                         <div className="flex space-x-4">
-                          <div className="px-6 py-3 bg-gray-700 text-gray-400 rounded-lg font-medium cursor-not-allowed font-serif">
-                            In Development
-                          </div>
-                          <div className="px-6 py-3 border border-gray-600 text-gray-500 rounded-lg font-medium cursor-not-allowed font-serif">
-                            Coming Soon
-                          </div>
+                          <a 
+                            href={project.liveLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-lg font-medium hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 hover:scale-105 font-serif"
+                          >
+                            Live
+                          </a>
+                          <a
+                            href={project.codeLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-6 py-3 border border-blue-400 text-blue-400 rounded-lg font-medium hover:bg-blue-400 hover:text-black transition-all duration-300 font-serif"
+                          >
+                            Learn more
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -679,18 +669,34 @@ export default function Home() {
               
               {/* Floating particles in form */}
               <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                {Array.from({ length: 8 }, (_, i) => (
-                  <div
-                    key={i}
-                    className="absolute w-1 h-1 bg-blue-400/30 rounded-full animate-float"
-                    style={{
-                      left: `${20 + Math.random() * 60}%`,
-                      top: `${20 + Math.random() * 60}%`,
-                      animationDelay: `${Math.random() * 3}s`,
-                      animationDuration: `${4 + Math.random() * 2}s`
-                    }}
-                  />
-                ))}
+                {Array.from({ length: 8 }, (_, i) => {
+                  // Use deterministic values based on index to avoid hydration mismatch
+                  const positions = [
+                    { left: 25, top: 30 },
+                    { left: 65, top: 45 },
+                    { left: 45, top: 65 },
+                    { left: 75, top: 25 },
+                    { left: 35, top: 70 },
+                    { left: 55, top: 35 },
+                    { left: 20, top: 50 },
+                    { left: 70, top: 60 }
+                  ];
+                  const delays = [0, 0.5, 1, 1.5, 2, 2.5, 0.8, 1.2];
+                  const durations = [4, 4.5, 5, 4.2, 4.8, 5.2, 4.6, 5.5];
+                  
+                  return (
+                    <div
+                      key={i}
+                      className="absolute w-1 h-1 bg-blue-400/30 rounded-full animate-float"
+                      style={{
+                        left: `${positions[i]?.left || 50}%`,
+                        top: `${positions[i]?.top || 50}%`,
+                        animationDelay: `${delays[i] || 0}s`,
+                        animationDuration: `${durations[i] || 4}s`
+                      }}
+                    />
+                  );
+                })}
               </div>
 
               <div className="relative z-10">
