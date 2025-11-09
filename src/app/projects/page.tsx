@@ -62,15 +62,52 @@ export default function ProjectsPage() {
             Featured Projects
           </h2>
           
-          {/* Project 1 - Poker Analyst */}
+          {/* Project 1 - AI Trading Application */}
           <div className="mb-20">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
-                <div className="bg-gradient-to-br from-red-500 to-orange-600 h-80 rounded-2xl flex items-center justify-center">
-                  <span className="text-white text-6xl font-bold">♠️</span>
+                <div className="bg-gradient-to-br from-green-500 to-emerald-600 h-80 rounded-2xl flex items-center justify-center">
+                  <span className="text-white text-6xl font-bold">📈</span>
                 </div>
               </div>
               <div className="order-1 lg:order-2">
+                <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">
+                  AI Trading Application
+                </h3>
+                <p className="text-lg text-slate-600 dark:text-slate-300 mb-6">
+                  A comprehensive Python trading application that uses machine learning to predict stock prices and execute automated trading strategies. 
+                  Features XGBoost and Random Forest models with real-time data processing, achieving 55.70% return on AAPL backtesting.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">
+                    Python
+                  </span>
+                  <span className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">
+                    XGBoost
+                  </span>
+                  <span className="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm">
+                    Streamlit
+                  </span>
+                  <span className="bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 px-3 py-1 rounded-full text-sm">
+                    Machine Learning
+                  </span>
+                </div>
+                <div className="flex gap-4">
+                  <a href="https://quantflowtrade.streamlit.app/" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                    Live Demo
+                  </a>
+                  <a href="https://quantflowtrade.streamlit.app/" target="_blank" rel="noopener noreferrer" className="border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 px-6 py-3 rounded-lg font-semibold transition-colors">
+                    View App
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Project 2 - Poker Analyst */}
+          <div className="mb-20">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
                 <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">
                   Poker Analyst - Win Percentage Calculator
                 </h3>
@@ -101,10 +138,15 @@ export default function ProjectsPage() {
                   </a>
                 </div>
               </div>
+              <div>
+                <div className="bg-gradient-to-br from-red-500 to-orange-600 h-80 rounded-2xl flex items-center justify-center">
+                  <span className="text-white text-6xl font-bold">♠️</span>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Project 2 - Smart Travel App */}
+          {/* Project 3 - Smart Travel App */}
           <div className="mb-20">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -147,7 +189,7 @@ export default function ProjectsPage() {
             </div>
           </div>
 
-          {/* Project 3 - Deep Recurrent Factor Model */}
+          {/* Project 4 - Deep Recurrent Factor Model */}
           <div className="mb-20">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">

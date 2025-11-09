@@ -270,6 +270,14 @@ export default function Home() {
 
   const projects = [
     {
+      title: "AI Trading Application",
+      subtitle: "Machine Learning Trading Bot",
+      description: "A comprehensive Python trading application that uses machine learning to predict stock prices and execute automated trading strategies. Features XGBoost and Random Forest models with 55.70% return achieved on AAPL backtesting.",
+      liveLink: "https://quantflowtrade.streamlit.app/",
+      codeLink: "https://github.com/phantomop26/QuantFlow",
+      color: "from-green-500 to-emerald-500"
+    },
+    {
       title: "Poker Analyst - Win Percentage Calculator",
       subtitle: "Statistical Analysis Tool",
       description: "A sophisticated poker win percentage calculator with opponent behavior analysis. Calculate your chances of winning based on your hand, community cards, and opponent playing styles.",
